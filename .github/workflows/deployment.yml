@@ -28,7 +28,7 @@ jobs:
           coverage: none
 
       - name: Install PHP Dependencies
-        run: composer install --no-interactive --prefer-dist
+        run: composer install --no-interaction --prefer-dist
 
       - uses: actions/checkout@v3
       - name: Compile Assets
