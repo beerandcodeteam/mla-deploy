@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+php artisan migrate --force
+
+php artisan optimize:clear
+
+/opt/docker/bin/entrypoint.sh supervisord
